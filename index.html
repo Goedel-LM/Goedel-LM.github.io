@@ -7,10 +7,10 @@
   <script src="https://kit.fontawesome.com/f8ddf9854a.js" crossorigin="anonymous"></script>
   <meta charset="utf-8">
   <meta name="description"
-    content="A New Frontier in Open-source Automated Theorem Proving">
+    content="Pushing the Limit of Automated Theorem Proving Through Large Scale Data Synthesizing">
   <meta name="keywords" content="Goedel-Prover, LMM">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> Goedel-Prover: A New Frontier in Open-source Automated Theorem Proving</title>
+  <title> Goedel-Prover: Pushing the Limits of Automated Theorem Proving Through Large-Scale Data Synthesis</title>
 
   <link rel="icon" href="./static/images/Goedel-Prover_icon2.png">
 
@@ -42,7 +42,7 @@
               Goedel-Prover
             </h1>
             <h2 class="subtitle is-3 publication-subtitle">
-              A New Frontier in Open-source Automated Theorem Proving
+              A New Frontier in Automated Theorem Proving
             </h2>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
@@ -488,8 +488,7 @@
                 <p>We train two distinct formalizers to enhance statement diversity:</p>
                 <p><strong>Formalizer A:</strong> Trained using Qwen2.5-Coder-32B on natural language and formal
                   language pairs from Lean workbook.</p>
-                <p><strong>Formalizer B:</strong> Utilizes Claude-sonnet-3.5 to formalize 230K statements, with 170K
-                  successfully passing compilation.</p>
+                <p><strong>Formalizer B:</strong> Trained on 170K statements formalized by Claude-sonnet-3.5 and syntactically verified by Lean compiler.</p>
                 <p>Training completed in under 24 hours using 8 H100 GPUs. Each problem receives 16 total formalizations
                   (8 from each formalizer).</p>
               </div>
@@ -538,10 +537,10 @@
             <div class="card-front">
               <div class="card-title">
                 <i class="fas fa-sync icon" style="color: #eab308;"></i>
-                Iterative Training
+                Expert Iteration
               </div>
               <div class="content">
-                Perform iterative training on the formalized statements.
+                Perform expert iteration on the formalized statements.
                 <ol>
                   <li>Generate 16 proof candidates per statement</li>
                   <li>Verify correctness</li>
@@ -561,11 +560,6 @@
                   <li>Trains new model (Prover-Iter-k) based on Deepseek-Prover-v1-Base with collected proofs</li>
                   <li>Iteratively improves through multiple training cycles</li>
                 </ul>
-                <h3>Training Parameters</h3>
-                <ul>
-                  <li>Learning rates: 1e-4 and 5e-5</li>
-                  <li>Training epochs: 1-2</li>
-                </ul>
               </div>
             </div>
           </div>
@@ -583,7 +577,7 @@
                 Statistics of the data scale.
                 <ul>
                   <li>928K informal statements processed</li>
-                  <li>1.64M formalizated statements</li>
+                  <li>1.64M formalized statements</li>
                   <li>140K Leanworkbook statements</li>
                   <li><strong>Total: 1.78M formal statements</strong></li>
                 </ul>
@@ -1207,9 +1201,9 @@
       <div class="key-findings">
         <h3>Key Findings</h3>
         <ul>
-          <li>Goedel-Prover-SFT achieves state-of-the-art performance of 57.6% on miniF2F at Pass@32</li>
+          <li>Achieving state-of-the-art performance of 57.6% on miniF2F at Pass@32</li>
           <li>Ranking the 1st on the PutnamBench Leaderboard with 7 problems solved out of 644 with Pass@512</li>
-          <li>Cumulatively solving 29.7K problems in Lean-workbook, significantly increasing the 15.7K proofs found by prior works.</li>
+          <li>Cumulatively solving 29.7K problems in Lean-workbook. We significantly increase the 15.7K proofs found by prior works.</li>
           <li>Iterative training process demonstrates consistent improvement in model performance</li>
         </ul>
       </div>
@@ -1221,7 +1215,7 @@
       <h2 class="title is-3 has-text-centered">BibTeX</h2>
       <pre><code>
         @article{lin2024Goedelprover,
-          title={Goedel-Prover: A New Frontier in Open-source Automated Theorem Proving}, 
+          title={Goedel-Prover: A New Frontier in Automated Theorem Proving}, 
           author={Yong Lin and Shange Tang and Bohan Lyu and Jiayun Wu and Hongzhou Lin and Kaiyu Yang and Jia Li and Mengzhou Xia and Danqi Chen and Sanjeev Arora and Chi Jin},
         }
     </code></pre>
